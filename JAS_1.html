@@ -1,0 +1,84 @@
+<!--we can comment out something in html by typing the code which is present at front and last of the line -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> <!-- just remember it is used to specify character coding-->
+    <!--<meta name="keywords" content="samurai, cars, swords" --> <!--  i commented this out because we cant keep many meta... things in the title-->
+   <!-- <meta name="description" content="This webpage is contaning a student's knowledge about HTML"> -->
+   <link rel="Stylesheet" type="text/css" href="css/main.css"> <!-- this helps us create link between css file and html file, rel means relation and it tells 
+the preffered style of css file, type tells the type of file and href tells the directory of that file -->
+<!--<script>
+    alert("You are entering in Jaspreet Singh Nahal's Website");
+</script>--> <!--i commented this section as it sometimes becomes annoying clicking the same box again and again while coding/testing the code-->
+<title>JAS_1</title>
+</head>
+<body>
+<div id="top"></div> <!-- the first part of this cod is at bottom, 2nd part= This is the top where we want the link to get us to-->
+<img src="Images/Merciless Admiral.jpg" width="95%" alt="My first photo on web"> <!-- we use this to add images
+src= source and it must be inside the folder you are using to code in html with width means we can set size and alt means we can set alternate name to the image-->
+<div id="navigation"> <!-- this helps us name the following section like i named navigation to the section which helps us navigate through pages-->
+<ul> <!-- ul is used to provide style for bullets in the webpage, all content inside ul and /ul will be considered for bullet-->
+    <br>
+    <li><a href="Contact_us.html">Contact Us</a></li> <!-- <li> is important to mention as it provides bullets to the line-->
+    <br>
+    <li><a href="../responsibly.html" onclick=" return confirm('Are you sure?');">Click Responsibly!</a></li> <!-- we need t add link to webiste, then we need to put onclick where return will take you
+    back to where you were if you cancel the aggreement where it asks you are you usre you want to go to the link you clicked, confirm shows the pop up box which asks for the consent to leave the site or open new link
+ are you sure provides the text in the popup box-->
+    <br>
+    <li><a href="../HTML/proto.pdf">sample file</a></li>
+    <br>
+</ul>
+</div>
+<!-- Style helps us add color to a particular section (not just line) of the page, we can use #*div id of the section* to add color to it -->
+<style> 
+    #navigation a{
+        color :crimson;
+    }
+
+</style>
+<hr> <!-- this is used to seperate a particular thing of the wbsite from the rest content by making a line in the website-->
+<ol><!-- all data inside ol will be used for adding number bullets like 1. 2. 3.-->
+    <li><p>THIS SYNTAX IS USED TO MAKE PARAGRAPH IN HTML</p></li>
+    <li><h1>THIS SYNTAX IS USED TO MAKE HEADINGS IN HTML</h1></li>
+    <li><h2 class="myclass" style="color: red;">WE CAN USE THIS TEXT WHERE STYLE=COLOR... CAN BE USED TO GIVE COLOR TO TEXT AND CLASS IS USED TO DEFINE A CLASS AS IN PREVIOUS LANGUAGES</h2></li>
+    <li><h2>WE CAN USE THE SAME HEADING SIZE AGAIN AND AGAIN, WHICH MEANS THAT H1, H2, H3 ARE JUST DIFFERNET SIZES AND CAN BE USED MANY TIMES</h2></li>
+</ol>
+
+<dl> <!-- anything under dl will be taken for tab  button i.e. providing space between margin and text-->
+        <dt><p>Info</p></dt> <!-- if anything  is under <dt> then it wwill be close to margin-->
+        
+        <dd><p>I am a student of Computer Science</p></dd> <!-- anything inside dd will be far from margin-->
+        
+        <dt><p>What is this language?</p></dt>
+        
+        <dd><p>This language is known as HTML</p></dd>
+</dl>
+
+
+
+<p>we can emphasize some part of text by adding <em>Whatsup brother!</em> and its done!
+<br> <!--we use this to break line-->
+    we can also make a text bold by saying <strong> and its done</strong></p>
+<div> <!-- div is used to seperate/divide the text from the rest of the content-->
+    <div> <!-- if we use 2 div then we have to remember that we need to place the second div a bit away from the first one-->
+            <a href="https://www.youtube.com/">YouTube</a> <!-- this is used to create link to a website, text inside " is the link" and what you want it to be called, 
+                like 'click here' etc can be typed where youtube is written in the code-->
+            
+    </div>
+</div>
+<p>My name <small>is</small> Jaspreet</p> <!-- used to make text small-->
+<p>My name <mark>is</mark> Jaspreet</p> <!-- used to make text small and highlighted-->
+<p>My name <sub>is</sub> Jaspreet</p><!-- used to make text at base, like Na2 where 2 will come in base-->
+<p>My name <sup>is</sup> Jaspreet</p> <!--used to give text in power-->
+<p><pre>My name is Jaspreet</pre></p> <!-- used to change font of the text along with the size, i.e. small size and different font-->
+
+
+
+
+
+
+
+<a href="#top">Go to top of page</a> <!-- by the help of this we can get to the top of the page, we can specify where is the top f page by placing the 2nd part of this code which is currently
+at line 13-->
+</body>
+</html>
