@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+<body>
+    <script>
+        var img;
+        var deg = 0;
+        var stars=[];
+        function preload() {
+            img = loadImage('https://i.ibb.co/nkmnNXS/World-Map-High-Res.jpg');
+        }
+        function setup() {
+            createCanvas(innerWidth, innerHeight, WEBGL);
+            background(0);
+            for (let i=0; i < 500; i++){
+                stars.push(createVector(random(-width, width), random(-height, height), random(-1000,1000)));
+            }
+        }
+        function draw() {
+            pointLight(255,255,255,100,-40,200);
+            clear();
+            ambientLight(120);
+            noStroke();
+            texture(img);
+            rotateZ(5.87);
+            rotateY(deg);
+            rotateX(0);
+            noStroke();
+            sphere(150);
+            ambientMaterial(255);
+            deg += 0.005;
+            fill(255);
+            for(let i=0; i<stars.length; i++){
+                push();
+                translate(stars[i].x, stars[i].y, stars[i].z);
+                sphere(1);
+                pop();
+            }
+        }
+    </script>
+</body>
+</html>
